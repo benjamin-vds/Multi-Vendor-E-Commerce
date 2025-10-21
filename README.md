@@ -1,82 +1,85 @@
-# Multi-Vendor E-Commerce App using Next.js and PERN Stack Project 2025
+<div align="center">
+  <h1><img src="https://gocartshop.in/favicon.ico" width="20" height="20" alt="GoCart Favicon">
+   GoCart</h1>
+  <p>
+    An open-source multi-vendor e-commerce platform built with Next.js and Tailwind CSS.
+  </p>
+  <p>
+    <a href="https://github.com/GreatStackDev/goCart/blob/main/LICENSE.md"><img src="https://img.shields.io/github/license/GreatStackDev/goCart?style=for-the-badge" alt="License"></a>
+    <a href="https://github.com/GreatStackDev/goCart/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge" alt="PRs Welcome"></a>
+    <a href="https://github.com/GreatStackDev/goCart/issues"><img src="https://img.shields.io/github/issues/GreatStackDev/goCart?style=for-the-badge" alt="GitHub issues"></a>
+  </p>
+</div>
 
-## Overview
-A modern multi-vendor e-commerce application built with Next.js (React) on the frontend and the PERN stack (Postgres, Express, React, Node) for full-stack capabilities. Designed for extensibility, vendor management, product catalogs, order processing, and admin analytics.
+---
 
-## Key Features
-- Multi-vendor onboarding and vendor dashboards
-- Product catalog with categories, tags, and media
-- Shopping cart and checkout with order management
-- Role-based authentication (customers, vendors, admins)
-- REST API backend with PostgreSQL persistence
-- Server-side rendering and API routes via Next.js
-- Basic analytics and reporting for vendors/admins
-- Secure environment variable management and migrations
+## 📖 Table of Contents
 
-## Tech Stack
-- Frontend: Next.js, React, Tailwind CSS (or styled-components)
-- Backend: Node.js, Express
-- Database: PostgreSQL
-- ORM/Query: Prisma or Sequelize (configurable)
-- Auth: JWT + secure refresh tokens (or NextAuth for SSO)
-- Dev tooling: ESLint, Prettier, Jest/React Testing Library
+- [✨ Features](#-features)
+- [🛠️ Tech Stack](#-tech-stack)
+- [🚀 Getting Started](#-getting-started)
+- [🤝 Contributing](#-contributing)
+- [📜 License](#-license)
 
-## Architecture
-- Next.js handles SSR/SSG and frontend routing.
-- Express provides RESTful API endpoints (microservices-friendly).
-- PostgreSQL stores relational data (users, vendors, products, orders).
-- Optional: Redis for caching and background job queue (e.g., Bull).
+---
 
-## Getting Started
+## Features
 
-### Prerequisites
-- Node.js >= 18
-- npm or yarn
-- PostgreSQL >= 12
-- (Optional) Redis for caching/jobs
+- **Multi-Vendor Architecture:** Allows multiple vendors to register, manage their own products, and sell on a single platform.
+- **Customer-Facing Storefront:** A beautiful and responsive user interface for customers to browse and purchase products.
+- **Vendor Dashboards:** Dedicated dashboards for vendors to manage products, view sales analytics, and track orders.
+- **Admin Panel:** A comprehensive dashboard for platform administrators to oversee vendors, products, and commissions.
 
-### Environment Variables
-Create a .env (example):
-- DATABASE_URL=postgresql://user:password@localhost:5432/dbname
-- NEXT_PUBLIC_API_URL=http://localhost:3000/api
-- JWT_SECRET=your_jwt_secret
-- NEXTAUTH_URL=http://localhost:3000
-- PORT=3000
+## 🛠️ Tech Stack <a name="-tech-stack"></a>
 
-### Setup
-1. Clone the repository
-2. Install dependencies
-   - npm install
-3. Set up the database and run migrations
-   - Using Prisma: npx prisma migrate deploy
-   - Or run SQL/migration tool of choice
-4. Seed initial data (vendors, admin user) if provided
+- **Framework:** Next.js
+- **Styling:** Tailwind CSS
+- **UI Components:** Lucide React for icons
+- **State Management:** Redux Toolkit
 
-### Running Locally
-- Development (frontend + backend):
-  - npm run dev
-- Build & Production:
-  - npm run build
-  - npm start
+## 🚀 Getting Started <a name="-getting-started"></a>
 
-### Testing
-- Unit & integration tests:
-  - npm test
-- Frontend tests:
-  - npm run test:ui
+First, install the dependencies. We recommend using `npm` for this project.
 
-## Deployment
-- Recommended: Vercel for Next.js frontend; Heroku, Railway, or a Docker-based host for backend & Postgres.
-- Use CI/CD to run tests and migrations before deployment.
-- Configure environment variables securely in the host.
+```bash
+npm install
+```
 
-## Contributing
-- Follow repository issue and PR templates.
-- Write tests for new features and run linters before committing.
-- Keep changes modular and document public APIs.
+Then, run the development server:
 
-## License
-Specify project license (e.g., MIT) in LICENSE file.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## Contact / Support
-Open issues or pull requests in the repository for bugs, feature requests, or questions.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/(public)/page.js`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Outfit](https://vercel.com/font), a new font family for Vercel.
+
+---
+
+## 🤝 Contributing <a name="-contributing"></a>
+
+We welcome contributions! Please see our [CONTRIBUTING.md](./CONTRIBUTING.md) for more details on how to get started.
+
+---
+
+## 📜 License <a name="-license"></a>
+
+This project is licensed under the MIT License. See the [LICENSE.md](./LICENSE.md) file for details.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
